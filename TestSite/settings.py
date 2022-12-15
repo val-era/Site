@@ -136,7 +136,8 @@ MEDIA_ROOT = BASE_DIR / 'page2/static/page2'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-BOT_KEY = '5007326355:AAG-6NjkPz3aNn6wNk_cMcoUYC8ei1mgA-c'
+""" ADD Bot Key here"""
+BOT_KEY = """your teleBot key"""
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
