@@ -1,0 +1,10 @@
+{% load static  %}
+<link rel="stylesheet" href="{% static 'user/css/logout.css' %}">
+<body>
+    <h2>Вы вышли из своей учетной записи</h2>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            <a href="{% url 'login' %}">Войти</a>
+        </small>
+    </div>
+</body>
