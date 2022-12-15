@@ -1,0 +1,7 @@
+django
+nltk
+pyTelegramBotAPI
+scikit-learn
+channels
+django-crispy-forms
+Pillow
