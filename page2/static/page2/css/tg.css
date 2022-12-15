@@ -1,0 +1,102 @@
+div h1{
+    position: relative;
+    color: #fff;
+    font-size: 3vw;
+    left: 50%;
+    width: 40%;
+    min-width: 40%;
+}
+.btn-primary{
+    padding: 1% 1%;
+    margin-top: 2%;
+    width: 10%;
+    min-width: 10%;
+    min-height: 10%;
+    border-radius: 10vh;
+    height: 10%;
+    font-size: 1.1vw;
+}
+
+.btn-success{
+    margin-top: 2%;
+    padding: 1% 1%;
+    width: 10%;
+    min-width: 10%;
+    min-height: 10%;
+    height: 10%;
+    border-radius: 10vh;
+    font-size: 1.1vw;
+}
+
+div button{
+    float: center;
+    text-align: left;
+    list-style: none;
+    font-size: 1.5vw;
+    margin-top: 2.3%;
+    margin-left: 30%;
+}
+
+div p{
+    font-size: 1.5vw;
+    position: relative;
+    color: #fff;
+    margin-top: 5%;
+    left: 50%;
+    width: 40%;
+    min-width: 40%;
+
+}
+
+
+.btn-info{
+    border: none !important;
+    background-color: #6dad8f !important;
+    position: relative;
+    margin-top: 3%;
+    color: #faf3dd;
+    padding: 1% 3%;
+    width: 40%;
+    min-width: 40%;
+    min-height: 10%;
+    height: 10%;
+    transition: transform .3s ease;
+}
+
+.btn-info:hover{
+    color: #faf3dd;
+    text-decoration: none;
+    transform: scale(1.06);
+}
+
+.btn-info img{
+    border-radius: 50%;
+    width: 15%;
+    height: 15%;
+    min-width: 15%;
+    min-height: 15%;
+    float: left;
+}
+
+
+.btn-info b{
+    font-size: 1vw;
+    float: left;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+
+.btn-info time{
+    font-size: 0.7vw;
+    float: right;
+    margin-right: 10%;
+    margin-top: 4%;
+}
+
+.btn-info i{
+    float: right;
+    margin-left: 90%;
+    margin-top: -9%;
+    font-size: 0.7vw;
+}

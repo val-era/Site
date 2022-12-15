@@ -1,0 +1,38 @@
+.about h1{
+    position: relative;
+    color: #fff;
+    top: 15%;
+    left: 50%;
+    width: 40%;
+    min-width: 40%;
+    font-size: 2.2vw;
+}
+
+.about h2{
+    position: relative;
+    color: #fff;
+    top: 15%;
+    left: 30%;
+    width: 50%;
+    min-width: 50%;
+    font-size: 1.5vw;
+}
+
+.about h3{
+    position: relative;
+    color: #fff;
+    top: 15%;
+    left: 30%;
+    width: 40%;
+    min-width: 40%;
+    font-size: 1.5vw;
+}
+
+.about img{
+    position: relative;
+    color: #fff;
+    top: 10%;
+    left: 30%;
+    width: 40%;
+    min-width: 40%;
+}

@@ -1,0 +1,44 @@
+.feed h1{
+    position: relative;
+    padding: 3% 5%;
+    top: 3%;
+    left: 30%;
+    font-size: 2vw;
+    width: 50%;
+    min-width: 50%;
+    color: #fff;
+}
+
+
+.feed input[name="question"]{
+    position: relative;
+    margin-top: 3%;
+    padding: 1% 2%;
+    left:30%;
+    font-size: 1vw;
+    width: 50%;
+    min-width: 50%;
+}
+
+.feed input[name="data"]{
+    position: relative;
+    padding: 1% 2%;
+    margin-top: 3%;
+    left:30%;
+    font-size: 1vw;
+    width: 50%;
+    min-width: 50%;
+}
+
+.btn-outline-secondary{
+    position: relative;
+    padding: 1% 2%;
+    margin-top: 3%;
+    left:30%;
+    font-size: 1vw;
+    width: 50%;
+    min-width: 50%;
+    min-height: 10%;
+    height: 10%;
+    background: #68b0ab;
+}

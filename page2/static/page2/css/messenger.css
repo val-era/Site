@@ -1,0 +1,125 @@
+.messenger h2 {
+    margin-bottom: 3%;
+    position: relative;
+    padding: 1% 1%;
+    color: #fff;
+    left:30%;
+    width: 50%;
+    min-width: 50%;
+    font-size: 3vw;
+    transition: transform .3s ease;
+}
+
+.messenger h2 img {
+    border-radius: 50%;
+    margin-right: 3%;
+}
+
+.messenger h2 i{
+    margin-left: 5%;
+}
+
+.messenger h2 i:hover {
+    color: #faf3dd;
+    text-decoration: none;
+    transform: scale(1.06);
+}
+
+.messenger a{
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 1%;
+    margin-top: -3%;
+    position: relative;
+    padding: 1% 1%;
+    left:50%;
+}
+
+.messenger h3 {
+    border: 0.1vw solid #aed1c1;
+    background: #6dad91;
+    border-radius: 1vw;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    position: relative;
+    padding: 1% 2%;
+    font-size: 1.4vw;
+    color: #faf3dd;
+    left:30%;
+    width: 40%;
+    min-width: 40%;
+}
+.messenger h3 time {
+    float: right;
+    font-size: 1vw;
+}
+.messenger h4 {
+    border: 0.1vw solid #aed1c1;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    background: #539478;
+    border-radius: 1vw;
+    position: relative;
+    padding: 1% 1%;
+    font-size: 1.4vw;
+    color: #faf3dd;
+    left:50%;
+    width: 40%;
+    min-width: 40%;
+}
+.messenger h4 time {
+    float: right;
+    font-size: 1vw;
+}
+
+.messenger h4 i{
+    float: right;
+    margin-right: 3%;
+}
+
+.messenger input[name="text"]{
+    color: black;
+    border: none !important;
+    background: #aed1c1;
+    border-radius: 1vw;
+    font-size: 1.2vw;
+    margin-left:30%;
+    width: 50%;
+    min-width: 50%;
+    margin-top: 1%;
+    padding: 1% 1%;
+    text-align: left;
+}
+
+.fa-file-image {
+    font-size: 2vw;
+    background: none;
+    border: none;
+    position: relative;
+    padding: 1% 1%;
+    float: right;
+    margin-top: -4%;
+    margin-right: 5%;
+    margin-bottom:5%;
+    text-decoration: none !important;
+    list-style: none !important;
+    color: #faf3dd;
+}
+
+.btn-outline-secondary{
+    margin-top: 2%;
+    padding: 1% 1%;
+    width: 10%;
+    min-width: 10%;
+    min-height: 10%;
+    height: 10%;
+    border-radius: 10vh;
+    font-size: 1.1vw;
+    margin-left: 30%;
+    position: relative;
+    float: right;
+    margin-top: -4%;
+}
+

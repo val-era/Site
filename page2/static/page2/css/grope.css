@@ -1,0 +1,111 @@
+div h1{
+    position: relative;
+    color: #fff;
+    top: 2vw;
+    left: 40%;
+    width: 40%;
+    font-size: 3vw;
+}
+.btn-primary{
+    padding: 1% 1%;
+    margin-top: 2%;
+    width: 10%;
+    min-width: 10%;
+    min-height: 10%;
+    border-radius: 10vh;
+    height: 10%;
+    font-size: 1.1vw;
+}
+
+.btn-success{
+    margin-top: 2%;
+    padding: 1% 1%;
+    width: 10%;
+    min-width: 10%;
+    min-height: 10%;
+    height: 10%;
+    border-radius: 10vh;
+    font-size: 1.1vw;
+}
+
+div button{
+    float: center;
+    text-align: left;
+    list-style: none;
+    font-size: 1.2vw;
+    margin-top: 1%;
+    margin-left: 30%;
+}
+
+div p{
+    font-size: 1.2vw;
+    position: relative;
+    color: #fff;
+    left: 50%;
+    width: 40%;
+    min-width: 40%;
+
+}
+
+
+.btn-info{
+    border: none !important;
+    background-color: #6dad8f !important;
+    position: relative;
+    color: #faf3dd;
+    top: 1vw;
+    padding: 1% 1%;
+    width: 30%;
+    min-width: 30%;
+}
+
+.btn-info img{
+    border-radius: 50%;
+    width: 16%;
+    height: 16%;
+    float: left;
+}
+
+
+.btn-info b{
+    font-size: 1.2vw;
+    float: left;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.checkbox{
+    font-size: 110%;
+    float: right;
+    padding: 1% 1%;
+    margin-top: 5%;
+}
+
+.inptext {
+    border: none !important;
+    background: #539478;
+    font-size: 1.2vw;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 30%;
+}
+
+
+.btn-outline-secondary {
+    background: #539478;
+    margin-top: 2%;
+    padding: 1% 1%;
+    width: 10%;
+    min-width: 10%;
+    border-radius: 10vh;
+    font-size: 1.1vw;
+    margin-right: 5%;
+    position: relative;
+    float: right;
+    font-size: 0.5vw;
+    margin-top: -3%;
+    margin-bottom: 5%;
+}
+
+
+

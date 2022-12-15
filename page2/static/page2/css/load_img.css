@@ -1,0 +1,46 @@
+body {
+    background: #6dad91;
+}
+
+.messenger h2 {
+    margin-bottom: 40px;
+    position: relative;
+    padding: 10px 20px;
+    color: #fff;
+    left:30%;
+    top: 20px;
+    width: 50%;
+    transition: transform .3s ease;
+}
+
+.messenger h2 img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+.load input{
+    position: relative;
+    padding: 10px 20px;
+    background: #539478;
+    color: #fff;
+    left: 40%;
+    top: 15%;
+}
+
+.load img {
+    width: 30%;
+    position: relative;
+    padding: 10px 20px;
+    left: 40%;
+    top: 15%;
+}
+
+.load button{
+    position: relative;
+    padding: 10px 20px;
+    left: 40%;
+    top: 15%;
+    background: #539478;
+    color: #fff;
+}

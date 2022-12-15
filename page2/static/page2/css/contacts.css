@@ -1,0 +1,22 @@
+h1{
+    position: relative;
+    color: #fff;
+    top: 30%;
+    left: 40%;
+    width: 30%;
+    min-width: 30%;
+    font-size: 2vw;
+}
+
+.btn-primary{
+    position: relative;
+    padding: 1% 2%;
+    margin-top: 3%;
+    left:30%;
+    font-size: 1.4vw;
+    width: 50%;
+    min-width: 50%;
+    min-height: 10%;
+    height: 10%;
+}
+
