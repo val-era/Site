@@ -13,6 +13,8 @@ from page2 import views
 import base64
 
 
+""" Create command to start TeleBot"""
+
 class Command(BaseCommand):
     help = 'TG Bot'
 
