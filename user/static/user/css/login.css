@@ -1,0 +1,50 @@
+body {
+    background: #509692;
+}
+
+.content-section {
+    width: 40%;
+    height: 35%;
+    margin-left: 30%;
+    margin-top: 15%;
+}
+
+legend{
+    margin-bottom: 3%;
+}
+
+button {
+    margin-top: 2%;
+    background: #509692;
+    border-radius: 15px;
+    color: #faf3dd;
+    border: 3px solid #509692;
+    transition: transform .3s ease;
+}
+
+button:hover{
+    color: #ea7500;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+
+fieldset {
+    background: #6dad91;
+    font-size: 20px;
+    color: #faf3dd;
+}
+
+small {
+    font-size: 15px;
+    color: #faf3dd;
+}
+
+small a{
+    color: #ea7500;
+}
+
+input {
+    margin-top: 3%;
+    margin-bottom: 4%
+}
