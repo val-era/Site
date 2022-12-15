@@ -13,3 +13,6 @@ Here you can see the nickname of the user, his avatar and previous messages to d
 Picture support in the form of BASE64 code is going on at the moment as telegram servers unfortunately delete pictures within 2 days. Also, to maintain the performance of artificial intelligence via the library skit-LEARN need to update and add new topics and questions in JSON file.
 
 
+At this point it is necessary to work out a dynamic content update when receiving new messages. Also, for faster loading get rid of the format BASE64 in the pictures, add them to the server, and with a certain time to remove. 
+
+To work out B.D. and remove from test SQLite to Postgress SQL.
