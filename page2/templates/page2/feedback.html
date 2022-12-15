@@ -1,0 +1,15 @@
+{%  extends 'page2/layout.html' %}
+{% load static %}
+{% block title %}Форма ОС{% endblock %}
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    <link rel="stylesheet" href="{% static 'page2/css/feedback.css' %}">
+        <div class="feed">
+            <h1>Введите сюда вопрос полностью как задал покупатель, что-бы мы могли проработать более качественные ответы для бота.</h1>
+            {{ form.data }}
+            {{ form.question }}
+            <button type="submit" class="btn btn-outline-secondary"><i class="fas fa-share"></i></button>
+        </div>
+</form>
+{% endblock %}

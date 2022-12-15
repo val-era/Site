@@ -1,0 +1,32 @@
+{%  extends 'page2/layout.html' %}
+{% load static  %}
+
+{% block title %}Массовая рассылка{% endblock %}
+
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    <link rel="stylesheet" href="{% static 'page2/css/grope.css' %}">
+        <div class="groupe">
+            <h1>Массовая рассылка</h1>
+            <button type="button" class="btn btn-primary" onclick="location.href='{% url 'home' %}'"><li><i class="fas fa-paper-plane" ></i>  Telegram</li></button>
+            <button type="button" class="btn btn-success" onclick="location.href='{% url 'groupe' %}'"><li><i class="fas fa-users" ></i>  Рассылка</li></button>
+
+            {% if msg_obj %}
+                {% for i in msg_obj %}
+                    {% for el in i %}
+                        <button type="button" class="btn btn-info">
+                            <img src="data:image/png;base64, {{ el.img }}">
+                            <b>{{ el.user_info }}</b>
+                            <input class="checkbox" type='checkbox' name="input" value='{{ el.user_id }}' />
+                        </button>
+                    {% endfor %}
+                {% endfor %}
+            {% else %}
+                <p>Пока некому отправлять рассылку=(</p>
+            {% endif %}
+            <textarea name="text" rows="5" class="inptext" placeholder="Введите ваш текст"></textarea>
+            <button type="submit" class="btn btn-outline-secondary"><i class="fas fa-share"></i></button>
+        </div>
+    {% endblock %}
+</form>

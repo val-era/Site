@@ -1,0 +1,29 @@
+{%  extends 'page2/layout.html' %}
+{% load static  %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'page2/css/tg.css' %}">
+    <div class="features">
+        <h1>Главная</h1>
+        <button class="btn btn-primary" onclick="location.href='{% url 'home' %}'"><li><i class="fas fa-paper-plane" ></i>  Telegram</li></button>
+        <button class="btn btn-success" onclick="location.href='{% url 'groupe' %}'"><li><i class="fas fa-users" ></i>  Рассылка</li></button>
+        {% if msg_obj %}
+            {% for i in msg_obj %}
+                {% for el in i %}
+                    <button type="button" class="btn btn-info" onclick="location.href='{% url 'messenger' parameter=el.user_id %}'" value='{{ el.user_id }}'>
+                        <img src="data:image/png;base64, {{ el.img }}">
+                        <b>{{ el.user_info }}<br><br>{{ el.text_lit }}...</b>
+                        <time>{{ el.data|time:"G:i" }}<br>{{ el.data|date:"d.m" }}</time>
+                        {% if el.is_read == False %}
+                        <i class="fas fa-circle" style='color: #fff;'></i>
+                        {% endif %}
+                    </button>
+                {% endfor %}
+            {% endfor %}
+        {% else %}
+            <p>У вас пока нет сообщений!</p>
+        {% endif %}
+    </div>
+{% endblock %}

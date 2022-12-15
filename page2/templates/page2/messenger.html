@@ -1,0 +1,49 @@
+{%  extends 'page2/layout.html' %}
+{% load static  %}
+
+{% block title %}Сообщения от {{ username }}{% endblock %}
+
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    <link rel="stylesheet" type="text/css" href="{% static 'page2/css/messenger.css' %}">
+        <div class="messenger">
+            <h2><i type="button" class="fas fa-arrow-left" onclick="location.href='{% url 'home' %}'" style='color: white; font-size: 2vw; margin-right: 5%;'></i>
+                <img src="data:image/png;base64, {{ img_id }}" width="12%" height="12%">{{ username }}
+                    <i type="button" class="fas fa-trash" onclick="location.href='{% url 'del' parameter=us_id %}'" value='{{ us_id }}' style='color: #ff6666; font-size: 2vw;'></i>
+                    <i type="button" class="fas fa-check" onclick="location.href='{% url 'updateargs' parameter=us_id %}'" value='{{ us_id }}' style='color: #00b300; font-size: 2vw; margin-left: 5%;'></i>
+            </h2>
+            {% for obj in msg %}
+                {% if obj.type_msg == "Text" %}
+                    {% if not obj.is_answer %}
+                        <h3>{{ obj.text }}<time>{{ obj.data|time:"G:i" }} {{ obj.data|date:"d.m" }}</time></h3>
+                    {% else %}
+                        <h4>{{ obj.text }}<time>{{ obj.data|time:"G:i" }} {{ obj.data|date:"d.m" }}</time><i type="button" class="fas fa-times" onclick="location.href='{% url  'delmsg' parameter=obj.msg_id  %}'" value='{{ obj.msg_id }}' style='color: #ff6666; font-size: 1vw;'></i></h4>
+                    {% endif %}
+                {% elif obj.type_msg == "Image" %}
+                    {% if not obj.is_answer %}
+                        <h3><img src="data:image/png;base64, {{ obj.text }}" style="width: 70%; min-width: 70%;"><time>{{ obj.data|time:"G:i" }} {{ obj.data|date:"d.m" }}</time>
+                        <br><br>{{ obj.text_lit }}</h3>
+                    {% else %}
+                        <h4><img src="data:image/png;base64, {{ obj.text }}" style="width: 70%; min-width: 70%;"><time>{{ obj.data|time:"G:i" }} {{ obj.data|date:"d.m" }}</time><i type="button" class="fas fa-times" style='color: #ff6666; font-size: 1vw;' onclick="location.href='{% url  'delmsg' parameter=obj.msg_id  %}'" value='{{ obj.msg_id }}' ></i>
+                        <br><br>{{ obj.text_lit }}</h4>
+                    {% endif %}
+                {% elif obj.type_msg == "ImageWb" %}
+                    <h3><img src="data:image/png;base64, {{ obj.text }}" style="width: 20%; min-width: 20%;"><time>{{ obj.data|time:"G:i" }} {{ obj.data|date:"d.m" }}</time>
+                        <br><br>{{ obj.text_lit }}</h3>
+                {% elif obj.type_msg == "VideoSt" %}
+                    <h3><video src="{{ obj.text }}" style="width: 20%; min-width: 20%;" autoplay muted loop></video><time>{{ obj.data|time:"G:i" }} {{ obj.data|date:"d.m" }}</time>
+                        <br><br>{{ obj.text_lit }}</h3>
+                {% else %}
+                    <h3><video src="{{ obj.text }}" style="width: 70%; min-width: 70%;" loop onclick="this.paused ? this.play() : this.pause();"></video><time>{{ obj.data|time:"G:i" }} {{ obj.data|date:"d.m" }}</time>
+                        <br><br>{{ obj.text_lit }}</h3>
+                {% endif %}
+            {% endfor %}
+            <containter>
+            {{form.text}}
+            <button type="button" class="fas fa-file-image" onclick="location.href='{% url 'load_image' parameter=us_id %}'" value='{{ us_id }}' ></button>
+            <button type="submit" class="btn btn-outline-secondary"><i class="fas fa-share"></i></button>
+            </containter>
+        </div>
+    {% endblock %}
+</form>

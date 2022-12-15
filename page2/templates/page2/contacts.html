@@ -1,0 +1,11 @@
+{%  extends 'page2/layout.html' %}
+{% load static %}
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'page2/css/contacts.css' %}">
+    <div class="cont">
+        <h1><br>Контакты с разработчиком</h1>
+        <button type="button" class="btn btn-primary" onclick="location.href='https://t.me/Valera_ignatev'"><i class="fas fa-beer"></i>Valerij Ignatev on Telegram</button>
+    </div>
+{% endblock %}

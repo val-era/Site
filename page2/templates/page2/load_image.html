@@ -1,0 +1,30 @@
+{%  extends 'page2/layout.html' %}
+{% load static  %}
+{% block title %}Отправить картинку {{ username }}{% endblock %}
+{% block content %}
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <link rel="stylesheet" type="text/css" href="{% static 'page2/css/load_img.css' %}">
+    <body>
+        <div class="messenger">
+            <h2><i type="button" class="fas fa-arrow-left" onclick="location.href='{% url 'home' %}'" style='color: white; font-size: 0.73em; margin-right: 50px;'></i>
+                <img src="data:image/png;base64, {{ img_id }}" width="60px" height="60px">{{ username }}
+            </h2>
+            <main class="load">
+                {{form.img}}<br><br>
+                <img id="output"/><br><br>
+                    <script>
+                      var loadFile = function(event) {
+                        var output = document.getElementById('output');
+                        output.src = URL.createObjectURL(event.target.files[0]);
+                        output.onload = function() {
+                          URL.revokeObjectURL(output.src) // free memory
+                        }
+                      };
+                    </script>
+                <button type="submit" class="btn btn-outline-secondary">Отправить картинку</button>
+            </main>
+        </div>
+    </body>
+</form>
+{% endblock %}
